@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Asap&family=Bitter:wght@800&family=Catamaran:wght@500&family=Kanit:wght@300&family=Poppins&family=Tajawal:wght@200;400&family=Teko:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control{
+    min-width: 400px;
+}
+
+.container-fluid{
+    margin: 5px 70px;
+}
+
+.pembuka {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+  
+.pembuka img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+  
+.tulisan-gambar {
+    position: absolute;
+    top: 50%;
+    left: 23%; 
+    transform: translateY(-50%);
+    text-align: left;
+    color: black;
+}
+
+.tulisan-gambar-satu {
+    display: block;
+    font-size: 2.8vw; 
+    font-weight: bolder;
+    text-align: left;
+}
+
+.tulisan-gambar-dua {
+    display: block;
+    font-size: 1.5vw; 
+    text-align: left;
+}
+
+.tulisan-gambar .tombol-discover {
+    margin-top: 18px;
+    padding: 1vw 1.5vw; 
+    background-color: #0652DD;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2vw; 
+    color: white;
+    text-align: left;
+}
+
+.container1 {
+    margin: 40px auto;
+    padding: 0px 84px;
+}
+
+.container2 {
+    margin: 0 auto 40px auto;
+    padding: 0px 84px;
+}
+
+h2 {
+    padding: 10px 0px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.new-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.popular-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.book-cover {
+    position: relative;
+    width: 180px;
+    height: 260px; /* Set the desired height for the book cover */
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.book-cover:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-add-library,
+.btn-read {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-add-library:hover,
+.btn-read:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+p {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10px;
+}
